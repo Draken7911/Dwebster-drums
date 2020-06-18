@@ -1,0 +1,170 @@
+/*drumcss*/
+
+body{
+ 
+  align-items: center;
+  image-resolution: 1920;
+  background-repeat: no-repeat;
+  
+  
+}
+
+#drum-machine {
+ 
+  align-items: center;
+  background: url("./img/metallicalogo.jpg");
+  background-size: cover;
+  top: 100px;
+  width: 100%;
+  margin-left: 0%;
+  height: 60%;
+  max-width: 100%;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   min-height: 100vh;
+   min-width: 100vh;
+ }
+ 
+ #drum-pad-wrap {
+   display: grid;
+   left: 200px;
+   margin-left: 25%;
+   padding-top: 1%;
+   grid-template-columns: repeat(9, 30px);
+   grid-template-rows: repeat(3, 60px);
+   grid-gap: 6px 3px;
+ }
+ 
+ .drum-pad {
+   color:black;
+   font-family: arial;
+   font-size: medium;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   flex-direction: row;
+   margin: 3px;
+   width: 70px;
+   height: 60px;
+   background:transparent;
+   border: 0px solid black;
+   border-radius: 50px;
+   cursor: pointer; 
+  transition:100ms linear;}
+ 
+ #midtom2    { grid-area: -1/-1/2/3; 
+   margin-top: -14%;
+   margin-left: 250px;
+   height: 200px;
+   width: 200px;
+   border-radius: 500px;
+   background: url("./img/tom1.png");
+   background-size: 12em;
+   background-repeat: no-repeat;
+  }
+ #hihat   { grid-area: -4/1/-1/7;
+ margin-top: 50%;
+ height: 230px;
+ width: 200px;
+ border-radius: 500px;
+ background: url("./img/hihat.png");
+ background-size: 12em;
+ background-position-y:0em,4em ;
+ background-repeat: no-repeat }
+ #kick    { grid-area: 1/5/2/7;
+ margin-top: 200px;
+ margin-left: 70px;
+ background: url("./img/bass.png");
+ background-size: 19em;
+ background-repeat: no-repeat;
+ border-radius: 400px;
+ height: 300px;
+ width: 300px; }
+ #crash { grid-area: 2/2/3/4; 
+   bottom: 500px;
+   margin-left: 1px;
+   margin-top: -255px;
+   height: 21em;
+   width: 200px;
+   border-radius: 500px;
+   background: url("./img/crash.png"),url("./img/cym.png")center;
+   background-size: 11em,20rem ;
+   background-position-y: 5em,11em;
+   background-repeat: no-repeat;}
+ #floortom    { grid-area: 4/10/3/6; 
+   margin-top: 50%;
+   height: 400px;
+   position: relative;
+   margin-left: 329px;
+   width: 225px;
+   border-radius: 500px;
+   background: url("./img/floortom.png");
+   background-size: 15em;
+   background-position-y:2em ;
+   background-position-x: -1em;
+   background-repeat: no-repeat;}
+ #ride    { grid-area: 2/6/3/8;
+   bottom: 500px;
+   margin-left: 342px;
+   margin-top: -172px;
+   height: 36em;
+   width: 200px;
+   border-radius: 500px;
+   background: url("./img/cymbal.png"),url("./img/cym.png")center;
+   background-size: 12em,31rem ;
+   background-position-y: 2em,7em;
+   background-repeat: no-repeat;
+     }
+ #snare   { grid-area: 3/2/4/6; 
+   margin-top: 50%;
+   height: 330px;
+   width: 200px;
+   border-radius: 500px;
+   background: url("./img/snare.png"),url("./img/stand.png");
+   background-size: 12em;
+   background-position-y:0em,4em ;
+   background-repeat: no-repeat;}
+ #tom     { grid-area: 1/5/4/7; 
+   margin-top: 50%;
+   height: 200px;
+   width: 200px;
+   border-radius: 500px;
+   background: url("./img/tom1.png");
+   background-size: 12em;
+   background-repeat: no-repeat;}
+ #bell { grid-area: 3/7/4/9; }
+ 
+ .playing {
+   color: rgb(241, 241, 239);
+   transform: scale(1.08);
+    }
+ 
+ #display {
+   position: inherit;
+   top: -50px;
+   margin-left: 42%;
+  
+  left: 100px;
+   color: rgb(85, 31, 0);
+   background:url("./img/flames.png");
+   background-size: 2.0em;
+   background-repeat: no-repeat;
+   background-position-x: -0.1em;
+ 
+   font-weight: bold;
+   font-size: 70px;
+   font-size-adjust: initial;
+   transition:  100ms linear; }
+ 
+ .playing2 {
+   transform: scale(1.0); }
+ 
+ .index{
+   position: relative;
+   height: 30%;
+   width: 40%;
+   top: 200px;
+   margin-left: 400px;
+   margin-top: 20%;
+ }
